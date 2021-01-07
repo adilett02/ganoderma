@@ -180,32 +180,53 @@ h1 {
 
 //about-product
 .about-product {
-  padding: 30px 0;
+  background-color: #f5f8f2;
+  padding: 40px 0;
   img {
     width: 100%;
   }
 }
+.heading-wrapper{
+  padding: 80px 0;
+  position: relative;
+}
 .heading {
+  position: relative;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-size: 36px;
+  z-index: 2;
 }
 .sub-heading {
+  position: relative;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   color: $bg-green;
   font-style: italic;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
+  z-index: 2;
 }
+.hidden-text{
+  position: absolute;
+  font-size: 150px;
+  opacity: 0.03;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+
+
 
 //reviews
 .reviews{
   padding-top: 30px;
-  height: 500px;
-  background-color: $bg-green;
+  background-color: $white;
 }
-
+.slider{
+  height: 500px;
+}
 
 
 
@@ -220,6 +241,9 @@ h1 {
 //map
 .map{
   padding-top: 30px;
-  height: 500px;
   background-color: $bg-green;
+  padding-bottom: 100px;
+}
+.map__list{
+  margin-top: 40px;
 }
