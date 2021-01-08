@@ -1,10 +1,8 @@
-$bg-green: #88b44e;
+$green: #88b44e;
 $white: #fff;
 $black: #000;
 $font2: "Roboto", sans-serif;
-
-
-
+$font1: "Playfair Display", serif;
 
 
 
@@ -12,4 +10,12 @@ $font2: "Roboto", sans-serif;
 //bootstrap
 $navbar-light-color: #fff;
 $navbar-nav-link-padding-x: 2rem;
-$navbar-light-hover-color: $white;
+$navbar-light-hover-color: $green;
+// $navbar-light-color: #88b44e;
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+.navbar-nav{
+    align-items: center;
+}

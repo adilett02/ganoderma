@@ -13,26 +13,30 @@
 
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="navbar-brand">
-        <img class="logo" src="images/logo2.png" alt="logo" />
-        <img class="logo2" src="images/logo.png" alt="logo">
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="navbar-brand">
+          <img class="logo" src="images/logo2.png" alt="logo" />
+          <img class="logo2" src="images/logo.png" alt="logo">
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Отзывы</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-        </ul>
-        <button class="order btn">Заказать сейчас</button>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Отзывы</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+            <li class="nav-item"><a href="#" class="order btn">Заказать сейчас</a></li>
+          </ul>
+          <!-- <button class="order btn">Заказать сейчас</button> -->
+        </div>
+      </nav>
+    </div>
+
   </header>
   <section class="hero-section">
     <div id="carouselExampleIndicators" class="carousel slide carousel-fade header-slider" data-ride="carousel"
@@ -68,26 +72,8 @@
 
 
 
-  <section class="about-product">
+  <!-- <section class="about-product">
     <div class="container">
-      <!-- <h2 class="heading">
-          Блок с описанием товара
-        </h2>
-        <p class="sub-heading">Lorem ipsum dolor sit.</p>
-        <div class="row">
-          <div class="col-6" data-aos="fade-left">
-            <img src="images/ganoderma.jpg" alt="ganoderma">
-          </div>
-          <div class="col-6" data-aos="fade-left">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam consectetur ullam, maiores alias recusandae at aliquid explicabo illum reprehenderit assumenda eius libero quia voluptatibus veritatis facilis saepe possimus. Neque iure possimus quos fugit culpa praesentium soluta optio, odit, dolorum necessitatibus ut delectus quod modi temporibus! Quidem sed ut velit officiis.
-          </div>
-        </div>
-        <h2 class="heading mt-5 mb-3">Видео-обзор чая</h2>
-        <div class="row" data-aos="fade-up">
-          <div class="col-8 offset-2">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/Jp5Es8Bsr4Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div> -->
 
       <div class="heading-wrapper">
         <h6 class="sub-heading">
@@ -96,40 +82,64 @@
         <h2 class="heading">
           Чай с ганодермой
         </h2>
-        
+
         <p class="hidden-text">Ганодерма</p>
       </div>
 
 
       <ul class="nav nav-tabs justify-content-around" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Качество</a>
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+            aria-selected="true">Качество</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Производство</a>
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+            aria-selected="false">Производство</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Полезные свойства</a>
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+            aria-selected="false">Полезные свойства</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="link-tab" data-toggle="tab" href="#link" role="tab" aria-controls="link" aria-selected="false">Состав</a>
+          <a class="nav-link" id="link-tab" data-toggle="tab" href="#link" role="tab" aria-controls="link"
+            aria-selected="false">Состав</a>
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vel officia cumque laborum dolorem amet maiores, mollitia porro eos iure fuga molestiae minus perferendis incidunt quae voluptatibus dicta unde, deleniti quod atque quas. Veritatis consectetur repellendus, suscipit quaerat nihil necessitatibus ex, error nisi non harum sunt nam, eum quasi esse aperiam molestiae ipsum ad enim quas maxime tempora.</div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia voluptas ex, in hic ullam aperiam. Illum ad dicta magnam molestiae.</div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, praesentium eveniet? Voluptatum laborum porro reiciendis quam sint enim tenetur eveniet officiis, harum maiores voluptas commodi esse cum asperiores praesentium vero eos blanditiis minima natus sapiente impedit deleniti quaerat repudiandae odit! Eligendi aspernatur id, sed rem sit possimus in magni optio velit qui repudiandae consectetur iusto, rerum amet unde quia, voluptate vel illo. Sed, asperiores beatae similique, ratione sint repellat facilis earum dolor facere debitis vel error repellendus ducimus laborum, animi corrupti rem itaque dignissimos esse quaerat aperiam quas. Dolores, placeat ipsa. Consectetur commodi ad nam pariatur cupiditate quod quis laboriosam.</div>
-        <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="link-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, praesentium eveniet? Voluptatum laborum porro reiciendis quam sint enim tenetur eveniet officiis, harum maiores voluptas commodi esse cum asperiores praesentium vero eos blanditiis minima natus sapiente impedit deleniti quaerat repudiandae odit! Eligendi aspernatur id, sed rem sit possimus in magni optio velit qui repudiandae consectetur iusto, rerum amet unde quia, voluptate vel illo. Sed, asperiores beatae similique, ratione sint repellat facilis earum dolor facere debitis vel error repellendus ducimus laborum, animi corrupti rem itaque dignissimos esse quaerat aperiam quas. Dolores, placeat ipsa. Consectetur commodi ad nam pariatur cupiditate quod quis laboriosam.</div>
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Quam vel officia cumque laborum dolorem amet maiores, mollitia porro
+          eos iure fuga molestiae minus perferendis incidunt quae voluptatibus dicta unde, deleniti quod atque quas.
+          Veritatis consectetur repellendus, suscipit quaerat nihil necessitatibus ex, error nisi non harum sunt nam,
+          eum quasi esse aperiam molestiae ipsum ad enim quas maxime tempora.</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit,
+          amet consectetur adipisicing elit. Officia voluptas ex, in hic ullam aperiam. Illum ad dicta magnam molestiae.
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Aut, praesentium eveniet? Voluptatum laborum porro reiciendis quam sint enim
+          tenetur eveniet officiis, harum maiores voluptas commodi esse cum asperiores praesentium vero eos blanditiis
+          minima natus sapiente impedit deleniti quaerat repudiandae odit! Eligendi aspernatur id, sed rem sit possimus
+          in magni optio velit qui repudiandae consectetur iusto, rerum amet unde quia, voluptate vel illo. Sed,
+          asperiores beatae similique, ratione sint repellat facilis earum dolor facere debitis vel error repellendus
+          ducimus laborum, animi corrupti rem itaque dignissimos esse quaerat aperiam quas. Dolores, placeat ipsa.
+          Consectetur commodi ad nam pariatur cupiditate quod quis laboriosam.</div>
+        <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="link-tab">Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Aut, praesentium eveniet? Voluptatum laborum porro reiciendis quam sint enim
+          tenetur eveniet officiis, harum maiores voluptas commodi esse cum asperiores praesentium vero eos blanditiis
+          minima natus sapiente impedit deleniti quaerat repudiandae odit! Eligendi aspernatur id, sed rem sit possimus
+          in magni optio velit qui repudiandae consectetur iusto, rerum amet unde quia, voluptate vel illo. Sed,
+          asperiores beatae similique, ratione sint repellat facilis earum dolor facere debitis vel error repellendus
+          ducimus laborum, animi corrupti rem itaque dignissimos esse quaerat aperiam quas. Dolores, placeat ipsa.
+          Consectetur commodi ad nam pariatur cupiditate quod quis laboriosam.</div>
       </div>
 
     </div>
-  </section>
+  </section> -->
 
 
 
 
 
-  <section class="reviews">
+  <!-- <section class="reviews">
     <div class="container">
       <div class="heading-wrapper">
         <h6 class="sub-heading">
@@ -145,8 +155,8 @@
         Здесь будет слайдер с отзывами
       </div>
     </div>
-  </section>
-  <section class="about-us">
+  </section> -->
+  <!-- <section class="about-us">
     <div class="container">
       <div class="heading-wrapper">
         <h6 class="sub-heading">
@@ -158,8 +168,8 @@
         <p class="hidden-text">О нас</p>
       </div>
     </div>
-  </section>
-  <section class="map">
+  </section> -->
+  <!-- <section class="map">
     <div class="container">
       <h2 class="heading">
         Где мы находимся и наши контакты
@@ -168,7 +178,8 @@
       <div class="map__list">
         <div class="row">
           <div class="col-8">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7cc5e8402465a6b8e6aef4b5850be7a9ef8e2f8d3b3c6ecbb21fcaa433693b01&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            <script type="text/javascript" charset="utf-8" async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7cc5e8402465a6b8e6aef4b5850be7a9ef8e2f8d3b3c6ecbb21fcaa433693b01&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
           </div>
           <div class="col-4">
             <p>Адрес карты</p>
@@ -177,10 +188,26 @@
           </div>
         </div>
       </div>
-      
-    </div>
-  </section>
 
+    </div>
+  </section> -->
+
+
+  <!-- <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <div class="footer-copyright">
+            Copyright 2021 Smart & Rich | Все Права Защищены
+            <a href="#" class="conditions-text"></a>
+          </div>
+        </div>
+        <div class="col-6">
+
+        </div>
+      </div>
+    </div>
+  </footer> -->
 
 
   <script src="js/libs.min.js"></script>
