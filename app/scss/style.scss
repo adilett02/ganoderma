@@ -96,6 +96,32 @@ button {
 }
 
 
+
+.scroll2{
+  background-color: $white;
+  -webkit-box-shadow: 0px 9px 9px -4px rgba(0,0,0,0.68); 
+  box-shadow: 0px 9px 9px -4px rgba(0,0,0,0.68);
+  transition: .5s;
+  .navbar .navbar-nav .nav-item .nav-link{
+    color: $green;
+  }
+  .logo{
+    display: none;
+  }
+  .logo2{
+    display: block;
+  }
+  .navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%2388b44e' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+}
+.logo2{
+  display: none;
+}
+.navbar-nav{
+  align-items: center;
+}
+
 .navbar-brand {
   cursor: pointer;
   width: 70px;
@@ -113,6 +139,8 @@ button {
   background-image: url(../images/slider-leafs.png);
   background-position: center;
   background-size: cover;
+  min-height: -webkit-fill-available;
+  height: calc(var(--vh, 1vh) * 100);
 }
 .header-slider {
   position: absolute;
@@ -185,6 +213,8 @@ h1 {
   text-align: center;
   margin-bottom: 25px;
   font-family: $font2;
+  font-size: 20px;
+  padding: 0 30px;
 }
 .order {
   font-family: "Roboto", sans-serif;

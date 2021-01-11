@@ -12401,6 +12401,41 @@ button {
           align-items: center;
 }
 
+.scroll2 {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 9px 9px -4px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 9px 9px -4px rgba(0, 0, 0, 0.68);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.scroll2 .navbar .navbar-nav .nav-item .nav-link {
+  color: #88b44e;
+}
+
+.scroll2 .logo {
+  display: none;
+}
+
+.scroll2 .logo2 {
+  display: block;
+}
+
+.scroll2 .navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%2388b44e' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.logo2 {
+  display: none;
+}
+
+.navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .navbar-brand {
   cursor: pointer;
   width: 70px;
@@ -12422,6 +12457,8 @@ button {
   background-image: url(../images/slider-leafs.png);
   background-position: center;
   background-size: cover;
+  min-height: -webkit-fill-available;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .header-slider {
@@ -12507,6 +12544,8 @@ h1 {
   text-align: center;
   margin-bottom: 25px;
   font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 0 30px;
 }
 
 .order {
@@ -12594,6 +12633,12 @@ h1 {
   margin-top: 40px;
 }
 
+@media (max-width: 992px) {
+  header.scroll {
+    display: block;
+  }
+}
+
 @media (max-width: 767px) {
   .title {
     font-size: 60px;
@@ -12615,5 +12660,14 @@ h1 {
   }
   .navbar-brand {
     width: 50px;
+  }
+  .header .nav-item {
+    font-size: 16px;
+  }
+  .header .order {
+    padding: 10px 15px;
+  }
+  .subtitle {
+    font-size: 16px;
   }
 }
