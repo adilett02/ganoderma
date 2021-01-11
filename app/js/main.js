@@ -23,10 +23,12 @@ $(function () {
     });
 
 
-
     $('.navbar-toggler').on('click', function () {
         $('.header').toggleClass('scroll2');
     });
+    // $('.navbar-toggler').on('dblclick', function () {
+    //     $('.header').toggleClass('scroll2');
+    // });
 
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
     let vh = window.innerHeight * 0.01;
