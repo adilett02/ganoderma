@@ -139,7 +139,7 @@ button {
   background-image: url(../images/slider-leafs.png);
   background-position: center;
   background-size: cover;
-  min-height: -webkit-fill-available;
+  // min-height: -webkit-fill-available;
   height: calc(var(--vh, 1vh) * 100);
 }
 .header-slider {
