@@ -23,11 +23,8 @@ $(function () {
     });
 
 
-    $('.navbar-toggler').on('click', function () {
-        $('.header').toggleClass('scroll2');
-    });
-    // $('.navbar-toggler').on('dblclick', function () {
-    //     $('.header').toggleClass('scroll2');
+    // $('.navbar-toggler').on('click', function () {
+    //     $('.header').toggleClass('scroll');
     // });
 
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -39,5 +36,5 @@ $(function () {
         // We execute the same script as before
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
-      });
+    });
 })
