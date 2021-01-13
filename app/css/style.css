@@ -12641,6 +12641,9 @@ h1 {
   .navbar-collapse {
     padding-bottom: 30px;
   }
+  .hidden-text {
+    font-size: 100px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -12679,5 +12682,8 @@ h1 {
   }
   .subtitle {
     font-size: 16px;
+  }
+  .hidden-text {
+    font-size: 60px;
   }
 }
