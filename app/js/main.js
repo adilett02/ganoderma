@@ -19,7 +19,8 @@ $(function () {
 
     siteScroll();
     AOS.init({
-        duration: 800
+        duration: 800,
+        offset: 90
     });
 
 
