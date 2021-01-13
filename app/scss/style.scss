@@ -63,6 +63,15 @@ button {
   .nav-item a:hover::after{
     transform: scale(1);
   }
+  .nav-item a.active-link::after{
+    content: '';
+    display: block;
+    width: 100% ;
+    background-color: $green;
+    height: 1px;
+    transform: scale(1);
+    transition: all .3s;
+  }
   .nav-item:hover a::after{
       background: $green ;
     }
@@ -300,7 +309,7 @@ h1 {
 //about-us
 .about-us{
   padding-top: 30px;
-  height: 500px;
+  height: 1000px;
 }
 
 
