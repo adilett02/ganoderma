@@ -12489,6 +12489,11 @@ button {
 
 .header-slider .carousel-item img {
   height: 100%;
+  width: 100%;
+}
+
+.mobile-img {
+  display: none;
 }
 
 @-webkit-keyframes zoom {
@@ -12644,6 +12649,12 @@ h1 {
   }
   .suptitle {
     font-size: 50px;
+  }
+  .mobile-img {
+    display: block;
+  }
+  .desktop-img {
+    display: none;
   }
 }
 

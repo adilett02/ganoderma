@@ -30,6 +30,12 @@
     .suptitle{
         font-size: 50px;
     }
+    .mobile-img{
+        display: block;
+    }
+    .desktop-img{
+        display: none;
+    }
 }
 
 @media (max-width: 575px) {

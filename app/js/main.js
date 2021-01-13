@@ -25,6 +25,7 @@ $(function () {
 
     $('.navbar-toggler').on('click', function () {
         $('.header').toggleClass('scroll2');
+        
     });
 
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
