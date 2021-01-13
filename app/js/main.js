@@ -20,7 +20,7 @@ $(function () {
     siteScroll();
     AOS.init({
         duration: 800,
-        offset: 90
+        offset: 70
     });
 
 
