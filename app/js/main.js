@@ -70,12 +70,12 @@ $(function ($) {
             const position = $(this).scrollTop();
     
             section.each(function () {
-                const top = $(this).offset().top - navHeight - 100,
+                const top = $(this).offset().top - navHeight - 200,
                       bottom = top + $(this).outerHeight();
     
                 if (position >= top && position <= bottom) {
                     nav.find('a').removeClass('active-link');
-                    section.removeClass('active-link');
+                    section.removeClass('active-ы');
     
                     $(this).addClass('active-link');
                     nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active-link');
