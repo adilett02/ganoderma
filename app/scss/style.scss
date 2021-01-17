@@ -301,6 +301,7 @@ h1 {
   position: relative;
   background-color: $white;
   background: url(../images/testimonials_parallax.jpg);
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   padding-bottom: 200px;

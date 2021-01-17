@@ -103,5 +103,4 @@ $(function ($) {
             prevEl: '.swiper-button-prev',
         },
     })
-
 });
