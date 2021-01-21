@@ -13134,8 +13134,8 @@ button {
 
 .scroll {
   background-color: #fff;
-  -webkit-box-shadow: 0px 9px 9px -4px rgba(0, 0, 0, 0.68);
-  box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
@@ -13316,10 +13316,8 @@ button {
 h1 {
   font-size: 72px;
   font-style: italic;
-  font-weight: 900;
+  font-weight: bolder;
   color: #88b44e;
-  position: relative;
-  z-index: 999;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -13350,7 +13348,7 @@ h1 {
 .follow-us {
   position: absolute;
   left: 60px;
-  top: 50%;
+  top: 48%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -13451,7 +13449,7 @@ h1 {
   top: 50%;
 }
 
-.more {
+.more-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13471,21 +13469,21 @@ h1 {
   outline: none;
 }
 
-.more:hover {
+.more-btn:hover {
   background: #88b44e;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.more:hover .arrow {
+.more-btn:hover .arrow {
   background: #252C30;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.more:hover .arrow svg {
+.more-btn:hover .arrow svg {
   fill: #88b44e;
 }
 
@@ -13637,20 +13635,6 @@ h1 {
   height: 1000px;
 }
 
-.map {
-  padding-top: 30px;
-  background-color: #88b44e;
-  padding-bottom: 100px;
-}
-
-.map__list {
-  margin-top: 40px;
-}
-
-.location {
-  height: 400px;
-}
-
 .form {
   background-color: #f5f8f2;
   padding: 100px 0;
@@ -13665,8 +13649,8 @@ h1 {
 
 .form-control:focus {
   border-color: #88b44e;
-  -webkit-box-shadow: 0px 0px 4px 0px #88B44E;
-          box-shadow: 0px 0px 4px 0px #88B44E;
+  -webkit-box-shadow: 0px 0px 4px 0px #88b44e;
+          box-shadow: 0px 0px 4px 0px #88b44e;
 }
 
 .footer {
@@ -13799,5 +13783,8 @@ h1 {
   }
   .reviews {
     padding-bottom: 100px;
+  }
+  .heading-wrapper {
+    padding: 40px 0;
   }
 }
