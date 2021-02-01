@@ -13266,11 +13266,26 @@ button {
 
 .header-slider .carousel-item {
   height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-slider .carousel-item img {
   height: 100%;
   width: 100%;
+}
+
+.header-slider .carousel-item1 {
+  background-image: url(../images/SLIDE_03.jpg);
+}
+
+.header-slider .carousel-item2 {
+  background-image: url(../images/SLIDE_01.jpg);
+}
+
+.header-slider .carousel-item3 {
+  background-image: url(../images/SLIDE_02.jpg);
 }
 
 .mobile-img {
@@ -13297,7 +13312,7 @@ button {
   }
 }
 
-.header-slider .carousel-item > img {
+.header-slider .carousel-item {
   -webkit-animation: zoom 20s;
   animation: zoom 20s;
 }
