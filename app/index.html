@@ -12,9 +12,9 @@
 </head>
 
 <body>
-
+  
   <!-- header -->
-  <header class="header ">
+  <!-- <header class="header ">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="navbar-brand">
@@ -39,7 +39,83 @@
     <div class="progress-container">
       <div class="progress-bar" id="myBar"></div>
     </div>
+  </header> -->
+
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icofont-close js-menu-toggle">Х</span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+
+  <!-- header -->
+  <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+    <div class="container-fluid">
+      <div class="row align-items-center">
+
+        <div class="col-6 col-lg-2">
+          <h1 class="mb-0 site-logo"><a href="index.html" class="mb-0">
+            <img src="images/logo.png" alt="">
+          </a></h1>
+        </div>
+
+        <div class="col-12 col-md-10 d-none d-lg-block">
+          <nav class="site-navigation position-relative text-right" role="navigation">
+
+            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+              <li class="active"><a href="#about" class="nav-link">О продукте</a></li>
+              <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+              <li><a href="#about-us" class="nav-link">О нас</a></li>
+            </ul>
+          </nav>
+        </div>
+
+
+        <div class="col-6 d-inline-block d-lg-none ml-md-0 py-3" style="position: relative; top: 3px;">
+
+          <a href="#" class="burger site-menu-toggle js-menu-toggle" data-toggle="collapse"
+            data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
   </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!-- hero-section -->
@@ -48,15 +124,10 @@
       data-pause="false">
       <div class="carousel-inner">
         <div class="carousel-item active carousel-item1">
-          <!-- <img src="images/SLIDE_03.jpg" alt="..." /> -->
         </div>
         <div class="carousel-item carousel-item2">
-          <!-- <img class="desktop-img" src="images/desktop1.jpg" class="d-block w-100" alt="..." />
-          <img class="mobile-img" src="images/mobile1.jpg" alt=""> -->
         </div>
         <div class="carousel-item carousel-item3">
-          <!-- <img class="desktop-img" src="images/header-bg.jpg" class="d-block w-100" alt="..." />
-          <img class="mobile-img" src="images/mobile2.jpg" alt=""> -->
         </div>
       </div>
       <ol class="carousel-indicators">
@@ -257,7 +328,7 @@
 
 
   <!-- testimonials -->
-  <section class="reviews" id="rewiews">
+  <section class="reviews" id="reviews">
     <div class="container">
       <div class="heading-wrapper">
         <h6 class="sub-heading">

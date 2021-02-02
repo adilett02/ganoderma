@@ -55,6 +55,7 @@ function jsLibs(cb) {
       'node_modules/bootstrap/dist/js/bootstrap.min.js',
       'node_modules/aos/dist/aos.js',
       'node_modules/swiper/swiper-bundle.js',
+      'node_modules/jquery-sticky/jquery.sticky.js',
     ];
   
     if (!libs.length) return cb();
