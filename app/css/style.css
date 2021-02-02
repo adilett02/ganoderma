@@ -13269,11 +13269,7 @@ button {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.header-slider .carousel-item img {
-  height: 100%;
-  width: 100%;
+  background-position: center;
 }
 
 .header-slider .carousel-item1 {
