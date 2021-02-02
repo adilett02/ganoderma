@@ -39,8 +39,21 @@
     .suptitle{
         font-size: 40px;
     }
-    .navbar-brand{
+    .logo{
         width: 50px;
+        margin: 10px 0;
+    }
+    .burger:before{
+        top: 6px;
+    }
+    .burger:after {
+        top: 24px;
+    }
+    .is-sticky .progress-container{
+        height: 3px;
+        .progress-bar{
+            height: 3px;
+        }
     }
     .header{
         .nav-item{
