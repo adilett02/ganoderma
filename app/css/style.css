@@ -13412,19 +13412,19 @@ button {
       transform: translateX(0%);
 }
 
-.site-mobile-menu .site-mobile-menu-header {
+.site-mobile-menu-header {
   width: 100%;
   float: left;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close {
+.site-mobile-menu-close {
   float: right;
   margin-top: 8px;
 }
 
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span {
+.site-mobile-menu-close span {
   font-size: 30px;
   display: inline-block;
   padding-left: 10px;
@@ -13436,7 +13436,7 @@ button {
   transition: 0.3s all ease;
 }
 
-.site-mobile-menu .site-mobile-menu-body {
+.site-mobile-menu-body {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   position: relative;
@@ -13445,38 +13445,38 @@ button {
   padding-bottom: 150px;
 }
 
-.site-mobile-menu .site-nav-wrap {
+.site-nav-wrap {
   padding: 0;
   margin: 0;
   list-style: none;
   position: relative;
 }
 
-.site-mobile-menu .site-nav-wrap a {
+.site-nav-wrap a {
   padding: 10px 20px;
   display: block;
   position: relative;
 }
 
-.site-mobile-menu .site-nav-wrap li {
+.site-nav-wrap li {
   position: relative;
   display: block;
 }
 
-.site-mobile-menu .site-nav-wrap > li {
+.site-nav-wrap > li {
   display: block;
   position: relative;
   float: left;
   width: 100%;
 }
 
-.site-mobile-menu .site-nav-wrap > li > a {
+.site-nav-wrap > li > a {
   color: #88b44e;
   padding-left: 20px;
   font-size: 20px;
 }
 
-.site-mobile-menu .site-nav-wrap > li > a.order {
+.site-nav-wrap > li > a.order {
   color: #fff;
 }
 
@@ -13580,6 +13580,7 @@ button {
   background-position: center;
   background-size: cover;
   height: calc(var(--vh, 1vh) * 100);
+  display: none;
 }
 
 .header-slider {

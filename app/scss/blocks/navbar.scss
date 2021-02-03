@@ -165,7 +165,7 @@
 .sticky-wrapper .site-navbar .site-menu > li > a {
   color: $white;
 }
-.sticky-wrapper .site-navbar .site-menu{
+.sticky-wrapper .site-navbar .site-menu {
   li a::after {
     content: "";
     display: block;
@@ -228,31 +228,29 @@
   top: 0;
   width: 100%;
   font-family: $font2;
+  .site-navigation {
+    .site-menu {
+      margin-bottom: 0;
+      a {
+        text-decoration: none !important;
+        display: inline-block;
+      }
+    }
+    .site-menu > li {
+      display: inline-block;
+      & > a {
+        padding: 15px 20px;
+        color: $white;
+        display: inline-block;
+        text-decoration: none !important;
+        &:hover{
+          color: $green;
+        }
+      }
+    }
+  }
 }
 
-.site-navbar .site-navigation .site-menu {
-  margin-bottom: 0;
-}
-
-.site-navbar .site-navigation .site-menu a {
-  text-decoration: none !important;
-  display: inline-block;
-}
-
-.site-navbar .site-navigation .site-menu > li {
-  display: inline-block;
-}
-
-.site-navbar .site-navigation .site-menu > li > a {
-  padding: 15px 20px;
-  color: $white;
-  display: inline-block;
-  text-decoration: none !important;
-}
-
-.site-navbar .site-navigation .site-menu > li > a:hover {
-  color: $green;
-}
 
 //mobile-menu
 .site-mobile-menu {
@@ -275,19 +273,19 @@
   transform: translateX(0%);
 }
 
-.site-mobile-menu .site-mobile-menu-header {
+.site-mobile-menu-header {
   width: 100%;
   float: left;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close {
+.site-mobile-menu-close {
   float: right;
   margin-top: 8px;
 }
 
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span {
+.site-mobile-menu-close span {
   font-size: 30px;
   display: inline-block;
   padding-left: 10px;
@@ -297,7 +295,7 @@
   transition: 0.3s all ease;
 }
 
-.site-mobile-menu .site-mobile-menu-body {
+.site-mobile-menu-body {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   position: relative;
@@ -306,37 +304,37 @@
   padding-bottom: 150px;
 }
 
-.site-mobile-menu .site-nav-wrap {
+.site-nav-wrap {
   padding: 0;
   margin: 0;
   list-style: none;
   position: relative;
 }
 
-.site-mobile-menu .site-nav-wrap a {
+.site-nav-wrap a {
   padding: 10px 20px;
   display: block;
   position: relative;
 }
 
-.site-mobile-menu .site-nav-wrap li {
+.site-nav-wrap li {
   position: relative;
   display: block;
 }
 
-.site-mobile-menu .site-nav-wrap > li {
+.site-nav-wrap > li {
   display: block;
   position: relative;
   float: left;
   width: 100%;
 }
 
-.site-mobile-menu .site-nav-wrap > li > a {
+.site-nav-wrap > li > a {
   color: $green;
   padding-left: 20px;
   font-size: 20px;
 }
-.site-mobile-menu .site-nav-wrap > li > a.order {
+.site-nav-wrap > li > a.order {
   color: $white;
 }
 /* Burger */
@@ -427,8 +425,8 @@
   outline: none;
 }
 
-.js-menu-toggle{
-  svg{
+.js-menu-toggle {
+  svg {
     width: 20px;
     fill: $black;
   }
