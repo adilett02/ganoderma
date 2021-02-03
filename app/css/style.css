@@ -13580,7 +13580,6 @@ button {
   background-position: center;
   background-size: cover;
   height: calc(var(--vh, 1vh) * 100);
-  display: none;
 }
 
 .header-slider {
