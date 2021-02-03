@@ -13061,6 +13061,14 @@ body {
   height: 2000px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
 ul,
 li {
   margin: 0;
@@ -13073,6 +13081,20 @@ li {
 button {
   border: none !important;
   outline: none !important;
+}
+
+.order {
+  font-family: "Roboto", sans-serif;
+  padding: 15px 30px;
+  background-color: #88b44e;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.order:hover {
+  background-color: #fff;
+  color: #252C30;
 }
 
 .is-sticky .progress-container {
@@ -13133,7 +13155,7 @@ button {
   color: #fff;
 }
 
-.sticky-wrapper .site-navbar .site-menu > li > a {
+.sticky-wrapper .site-navbar .site-menu li a {
   color: #fff;
 }
 
@@ -13225,18 +13247,18 @@ button {
   display: inline-block;
 }
 
-.site-navbar .site-navigation .site-menu > li {
+.site-navbar .site-navigation .site-menu li {
   display: inline-block;
 }
 
-.site-navbar .site-navigation .site-menu > li > a {
+.site-navbar .site-navigation .site-menu li a {
   padding: 15px 30px;
   color: #fff;
   display: inline-block;
   text-decoration: none !important;
 }
 
-.site-navbar .site-navigation .site-menu > li > a:hover {
+.site-navbar .site-navigation .site-menu li a:hover {
   color: #88b44e;
 }
 
@@ -13274,6 +13296,7 @@ button {
 
 .site-mobile-menu-close {
   float: right;
+  margin-top: 8px;
 }
 
 .site-mobile-menu-close span {
@@ -13528,20 +13551,6 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   padding: 0 30px;
-}
-
-.order {
-  font-family: "Roboto", sans-serif;
-  padding: 15px 30px;
-  background-color: #88b44e;
-  color: #fff;
-  border-radius: 50px;
-  font-weight: 700;
-}
-
-.order:hover {
-  background-color: #fff;
-  color: #252C30;
 }
 
 .follow-us {

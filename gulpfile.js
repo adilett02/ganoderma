@@ -56,6 +56,7 @@ function jsLibs(cb) {
       'node_modules/aos/dist/aos.js',
       'node_modules/swiper/swiper-bundle.js',
       'node_modules/jquery-sticky/jquery.sticky.js',
+      'node_modules/jquery-easing/dist/jquery.easing.1.3.umd.min.js',
     ];
   
     if (!libs.length) return cb();

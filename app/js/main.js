@@ -1,8 +1,9 @@
-$(function ($) {
+(function ($) {
 
     "use strict";
     //animation
     AOS.init({
+        easing: 'ease',
         duration: 800,
         offset: 70
     });
@@ -19,7 +20,7 @@ $(function ($) {
 
 
     //scroll
-    $('header .nav-link').on('click', function () {
+    $('.nav-link').on('click', function () {
         $('html, body').animate({
             scrollTop: $($(this).attr("href")).offset().top - 90 + "px"
         }, {
@@ -37,9 +38,9 @@ $(function ($) {
         navHeight = nav.outerHeight(); // получаем высоту навигации 
 
     // поворот экрана 
-    window.addEventListener('orientationchange', function () {
-        navHeight = nav.outerHeight();
-    }, false);
+    // window.addEventListener('orientationchange', function () {
+    //     navHeight = nav.outerHeight();
+    // }, false);
 
     $(window).on('scroll', function () {
         const position = $(this).scrollTop();
@@ -100,7 +101,7 @@ $(function ($) {
         }
     });
     $('.back-to-top').on('click', function () {
-        $('html, body').animate({ scrollTop: 0 }, 1000);
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     })
 
@@ -192,4 +193,4 @@ $(function ($) {
     };
     siteSticky();
 
-});
+})(jQuery);

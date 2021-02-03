@@ -48,7 +48,7 @@
   }
 }
 
-.sticky-wrapper .site-navbar .site-menu > li > a {
+.sticky-wrapper .site-navbar .site-menu li a {
   color: $white;
 }
 .sticky-wrapper .site-navbar .site-menu {
@@ -122,9 +122,9 @@
         display: inline-block;
       }
     }
-    .site-menu > li {
+    .site-menu li {
       display: inline-block;
-      & > a {
+      & a {
         padding: 15px 30px;
         color: $white;
         display: inline-block;
@@ -167,6 +167,7 @@
 
 .site-mobile-menu-close {
   float: right;
+  margin-top: 8px;
 }
 
 .site-mobile-menu-close span {
