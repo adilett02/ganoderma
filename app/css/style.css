@@ -13075,153 +13075,6 @@ button {
   outline: none !important;
 }
 
-.header {
-  position: fixed;
-  width: 100%;
-  background: transparent;
-  z-index: 99;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  font-family: "Roboto", sans-serif;
-}
-
-.header .nav-item a::after {
-  content: "";
-  display: block;
-  width: 100%;
-  background-color: #fff;
-  height: 1px;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.header .nav-item a:hover::after {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-}
-
-.header .nav-item a.active-link::after {
-  content: "";
-  display: block;
-  width: 100%;
-  background-color: #88b44e;
-  height: 1px;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.header .nav-item:hover a::after {
-  background: #88b44e;
-}
-
-.header .nav-item:last-child a::after {
-  display: none;
-}
-
-.scroll {
-  background-color: #fff;
-  -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
-          box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.scroll .navbar .navbar-nav .nav-item .nav-link {
-  color: #88b44e;
-}
-
-.scroll .logo-img {
-  display: none;
-}
-
-.scroll .logo-img {
-  display: block;
-}
-
-.scroll .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%2388b44e' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.scroll .progress-container {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 5px;
-  background: transparent;
-}
-
-.scroll .progress-bar {
-  height: 5px;
-  background: #88b44e;
-  width: 0%;
-}
-
-.scroll2 {
-  background-color: #fff;
-  -webkit-box-shadow: 0px 9px 9px -4px rgba(0, 0, 0, 0.68);
-  box-shadow: 0px 9px 9px -4px rgba(0, 0, 0, 0.68);
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.scroll2 .navbar .navbar-nav .nav-item .nav-link {
-  color: #88b44e;
-}
-
-.scroll2 .logo {
-  display: none;
-}
-
-.scroll2 .logo2 {
-  display: block;
-}
-
-.scroll2 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%2388b44e' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.logo2 {
-  display: none;
-}
-
-.navbar-nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.logo2 {
-  display: none;
-}
-
-.navbar-nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar-brand {
-  cursor: pointer;
-  width: 70px;
-}
-
-.navbar-brand img {
-  width: 100%;
-}
-
 .is-sticky .progress-container {
   position: absolute;
   bottom: 0;
@@ -13377,7 +13230,7 @@ button {
 }
 
 .site-navbar .site-navigation .site-menu > li > a {
-  padding: 15px 20px;
+  padding: 15px 30px;
   color: #fff;
   display: inline-block;
   text-decoration: none !important;
@@ -13461,22 +13314,17 @@ button {
 .site-nav-wrap li {
   position: relative;
   display: block;
-}
-
-.site-nav-wrap > li {
-  display: block;
-  position: relative;
   float: left;
   width: 100%;
 }
 
-.site-nav-wrap > li > a {
+.site-nav-wrap li a {
   color: #88b44e;
   padding-left: 20px;
   font-size: 20px;
 }
 
-.site-nav-wrap > li > a.order {
+.site-nav-wrap li a.order {
   color: #fff;
 }
 
@@ -13719,6 +13567,8 @@ h1 {
 }
 
 .follow-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   position: relative;
   -webkit-transform: rotate(270deg) translateX(-50%) translateY(-50%);
       -ms-transform: rotate(270deg) translateX(-50%) translateY(-50%);
