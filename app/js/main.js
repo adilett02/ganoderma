@@ -24,8 +24,8 @@
         $('html, body').animate({
             scrollTop: $($(this).attr("href")).offset().top - 90 + "px"
         }, {
-            duration: 500,
-            easing: "swing"
+            duration: 1000,
+            easing: "easeInOutExpo"
         });
     });
 

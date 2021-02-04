@@ -84,3 +84,21 @@
     }
   }
   
+
+
+
+
+
+  h4.about-heading{
+    font-size: 28px;
+    color: $green;
+    // white-space: nowrap;
+    margin-bottom: 20px;
+  }
+  .about-text{
+    font-family: $font2;
+    margin-top: 15px;
+    &:first-child{
+      margin-top: 20px;
+    }
+  }
