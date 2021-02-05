@@ -13547,9 +13547,10 @@ h1 {
   color: #fff;
   text-align: center;
   margin-bottom: 25px;
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   padding: 0 30px;
+  font-style: italic;
+  font-weight: bolder;
 }
 
 .follow-us {
@@ -13856,7 +13857,10 @@ h4.about-heading {
 
 .about-us {
   padding-top: 30px;
-  height: 1000px;
+}
+
+.about-us img {
+  width: 100%;
 }
 
 .form {
