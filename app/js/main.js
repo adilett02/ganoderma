@@ -8,7 +8,6 @@
         offset: 70
     });
 
-
     //100vh на телефонах
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
