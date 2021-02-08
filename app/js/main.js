@@ -3,10 +3,15 @@
     "use strict";
     //animation
     AOS.init({
+        offset: 150,
+        duration: 1000,
+        delay: 100,
         easing: 'ease',
-        duration: 800,
-        offset: 70
+        once: true,
     });
+
+    console.log($('header').height());
+
 
     //100vh на телефонах
     let vh = window.innerHeight * 0.01;
@@ -21,7 +26,7 @@
     //scroll
     $('.nav-link').on('click', function () {
         $('html, body').animate({
-            scrollTop: $($(this).attr("href")).offset().top - 90 + "px"
+            scrollTop: $($(this).attr("href")).offset().top - $('header').height() + "px"
         }, {
             duration: 1000,
             easing: "easeInOutExpo"

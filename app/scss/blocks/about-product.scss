@@ -1,104 +1,109 @@
 //about-product
 .about-product {
-    background-color: #f5f8f2;
-    img {
-      width: 100%;
+  background-color: #f5f8f2;
+  img {
+    width: 100%;
+  }
+}
+.book {
+  background-image: url(../images/book-bg.jpg);
+  padding: 50px 0 70px 0;
+}
+.buy-section {
+  background-image: url(../images/buy-bg.png);
+  background-color: $green;
+  background-position: center;
+  padding-top: 120px;
+}
+
+.useful__list {
+  position: relative;
+  width: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1px;
+    background-color: $black;
+  }
+  .useful__item {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    margin: 20px 0;
+    &-text {
+      padding: 30px;
+      background-color: $green;
+      color: $white;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 10%;
+      right: 10px;
+      z-index: 1;
+      border: 10px solid;
+      border-color: transparent transparent transparent $green;
+    }
+    &.right {
+      position: relative;
+    }
+    &.right::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 10%;
+      z-index: 1;
+      border: 10px solid;
+      left: 10px;
+      right: auto;
+      border-color: transparent $green transparent transparent;
     }
   }
-  .heading-wrapper{
-    padding: 80px 0;
-    position: relative;
+  .useful__item.left {
+    margin-right: auto;
+    padding-right: 30px;
   }
-  .heading {
-    position: relative;
-    text-align: center;
-    margin-bottom: 0px;
-    font-size: 36px;
-    z-index: 2;
+  .useful__item.right {
+    margin-left: auto;
+    padding-left: 30px;
+  }
+}
+
+.buy-text {
+  font-size: 24px;
+  font-style: italic;
+  color: $white;
+}
+.more-btn2 {
+  margin: 40px auto auto 20px;
+  font-family: $font2;
+  &:hover {
+    background-color: $white;
     color: $black;
-  }
-  .sub-heading {
-    position: relative;
-    text-align: center;
-    margin-bottom: 10px;
-    color: $green;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 16px;
-    z-index: 2;
-  }
-  .hidden-text{
-    position: absolute;
-    font-size: 150px;
-    opacity: 0.03;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-  }
-  .more-btn{
-    display: flex;
-    align-items: center;
-    padding: 15px 35px;
-    border-radius: 50px;
-    background: $black;
-    color: $white;
-    font-size: 14px;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    font-weight: bold;
     transition: all 0.3s ease;
-    outline: none;
-    &:hover{
+    .arrow {
       background: $green;
-      transition: all 0.3s ease;
-      .arrow{
-        background: $black;
-        transition: all 0.3s ease;
-        svg{
-          fill: $green;
-        }
+      svg {
+        fill: $black;
       }
     }
   }
-  .arrow{
-    width: 15px;
-    height: 15px;
-    display: flex;
-    transform: rotate(90deg);
-    background: $green;
-    padding: 3px;
-    border-radius: 50%;
-    margin-left: 10px;
-    transition: all 0.3s ease;
-    svg{
-      width: 100%;
-      fill: $black;
-    }
+}
+
+
+.video-section{
+  background-image: url(../images/video-bg.jpg);
+  padding: 120px 0 0 0;
+  .tea-video{
+    width: 100%;
+    height: 520px;
   }
-  .video{
-    background-image: url(../images/video-bg.png);
-    background-color: $green;
-    background-position: center;
-    padding: 120px 0;
-    .tea-video{
-      height: 500px;
-    }
-  }
-  
-
-
-
-
-
-  h4.about-heading{
-    font-size: 28px;
-    color: $green;
-    // white-space: nowrap;
-    margin-bottom: 20px;
-  }
-  .about-text{
-    font-family: $font2;
-    margin-top: 15px;
-    &:first-child{
-      margin-top: 20px;
-    }
-  }
+}

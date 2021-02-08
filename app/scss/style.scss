@@ -10,8 +10,7 @@
 body {
   font-family: $font2;
   font-family: $font1;
-  font-size: 16px;
-  height: 2000px;
+  font-size: 18px;
 }
 h1,
 h2,
@@ -52,6 +51,110 @@ button {
 //   color: inherit;
 //   text-decoration: none;
 // }
+
+
+
+
+
+
+
+.heading-wrapper{
+  padding: 70px 0;
+  position: relative;
+}
+.heading {
+  position: relative;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 36px;
+  z-index: 2;
+  color: $black;
+}
+.sub-heading {
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+  color: $green;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  z-index: 2;
+}
+.hidden-text{
+  position: absolute;
+  font-size: 150px;
+  opacity: 0.03;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.more-btn{
+  display: flex;
+  align-items: center;
+  padding: 15px 35px;
+  border-radius: 50px;
+  background: $black;
+  color: $white;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  transition: all 0.3s ease;
+  outline: none;
+  &:hover{
+    background: $green;
+    transition: all 0.3s ease;
+    .arrow{
+      background: $black;
+      transition: all 0.3s ease;
+      svg{
+        fill: $green;
+      }
+    }
+  }
+}
+.arrow{
+  width: 15px;
+  height: 15px;
+  display: flex;
+  transform: rotate(90deg);
+  background: $green;
+  padding: 3px;
+  border-radius: 50%;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+  svg{
+    width: 100%;
+    fill: $black;
+  }
+}
+
+
+.slogan{
+  font-family: $font1;
+  font-size: 20px;
+}
+h4.about-heading {
+  font-size: 36px;
+  color: $green;
+  // white-space: nowrap;
+  margin-bottom: 20px;
+}
+.about-text {
+  font-family: $font2;
+  margin-top: 15px;
+  &:first-child {
+    margin-top: 20px;
+  }
+}
+
+
+.black-text{
+  color: $black !important;
+}
+.white-text{
+  color: $white !important;
+}
+
 
 @import "blocks/navbar.scss";
 
