@@ -2,7 +2,7 @@
 .reviews{
     position: relative;
     background-color: $white;
-    background: url(../images/testimonials_parallax.jpg);
+    background: url(../images/testimonials/testimonials-bg.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -67,16 +67,16 @@
       outline: none;
       margin: 0 8px;
       &:first-child{
-        background-image: url(../images/author1.png);
+        background-image: url(../images/testimonials/author1.png);
       }
       &:nth-child(2){
-        background-image: url(../images/author2.png);
+        background-image: url(../images/testimonials/author2.png);
       }
       &:nth-child(3){
-        background-image: url(../images/author3.png);
+        background-image: url(../images/testimonials/author3.png);
       }
       &:last-child{
-        background-image: url(../images/author4.png);
+        background-image: url(../images/testimonials/author4.png);
       }
     }
     .swiper-pagination-bullet-active {

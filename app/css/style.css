@@ -13684,6 +13684,7 @@ h1 {
 }
 
 .subtitle {
+  width: 100%;
   color: #fff;
   text-align: center;
   margin-bottom: 25px;
@@ -13923,7 +13924,7 @@ h1 {
 .reviews {
   position: relative;
   background-color: #fff;
-  background: url(../images/testimonials_parallax.jpg);
+  background: url(../images/testimonials/testimonials-bg.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -14004,19 +14005,19 @@ h1 {
 }
 
 .swiper-pagination .swiper-pagination-bullet:first-child {
-  background-image: url(../images/author1.png);
+  background-image: url(../images/testimonials/author1.png);
 }
 
 .swiper-pagination .swiper-pagination-bullet:nth-child(2) {
-  background-image: url(../images/author2.png);
+  background-image: url(../images/testimonials/author2.png);
 }
 
 .swiper-pagination .swiper-pagination-bullet:nth-child(3) {
-  background-image: url(../images/author3.png);
+  background-image: url(../images/testimonials/author3.png);
 }
 
 .swiper-pagination .swiper-pagination-bullet:last-child {
-  background-image: url(../images/author4.png);
+  background-image: url(../images/testimonials/author4.png);
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
