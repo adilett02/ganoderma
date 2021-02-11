@@ -208,8 +208,28 @@
     //     showCursor: false,
     // });
     new TypeIt(".subtitle", {
-        strings: "Международная компания Smar&tRich предлагает Вам оценить уникальный вкус кофе и чая!",
+        // strings: "Международная компания Smar&tRich предлагает Вам оценить уникальный вкус кофе и чая!",
         speed: 60,
         waitUntilVisible: true
     }).go();
+
+    new TypeIt(".buy-text", {
+        // strings: "Позаботься сегодня о своем благополучии и благополучии своей семьи!",
+        speed: 60,
+        waitUntilVisible: true
+    }).go();
+
+    new TypeIt(".last-text", {
+        // strings: "Позаботься сегодня о своем благополучии и благополучии своей семьи!",
+        speed: 60,
+        waitUntilVisible: true
+    }).go();
+
+
+
+
+
+    $('.more__link').on('click', function() {
+        $('.hidden-block').slideToggle();
+    });
 })(jQuery);

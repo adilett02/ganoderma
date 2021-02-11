@@ -98,52 +98,71 @@
   }
 }
 
-
-.video-section{
+.video-section {
   background-image: url(../images/video-bg.jpg);
   padding: 80px 0 0 0;
-  .tea-video{
+  .tea-video {
     width: 100%;
     height: 520px;
     margin-bottom: -100px;
   }
-  .video-heading{
+  .video-heading {
     font-size: 60px;
     color: $white;
     text-align: center;
     margin-bottom: 40px;
-    span{
+    span {
       color: $green;
     }
   }
 }
 
-
-
-
-
-
-
-.buy-section2{
+.buy-section2 {
   padding: 170px 0 120px;
-  .more-btn2{
+  .more-btn2 {
     margin: 30px auto;
   }
-  .buy-btn{
+  .buy-btn {
     background-color: $green;
-    &:hover{
+    &:hover {
       background-color: $black;
       color: $white;
     }
   }
-  .questions-btn{
-    &:hover{
+  .questions-btn {
+    display: inline-flex;
+    &:hover {
       background-color: $green;
       color: $white;
       font-weight: normal;
-      .arrow{
+      .arrow {
         background-color: $white;
       }
     }
   }
+}
+
+.more__link {
+  color: $green;
+  text-decoration: underline;
+  float: right;
+  margin-top: 20px;
+  background-color: transparent;
+  &:hover {
+    color: $green;
+  }
+}
+.hidden-block {
+  display: none;
+}
+
+.benefit__item {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  margin-top: 25px;
+}
+
+.about-product .done-img {
+  width: 40px;
 }
