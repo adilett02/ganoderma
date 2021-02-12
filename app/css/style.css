@@ -13983,6 +13983,8 @@ h1 {
 }
 
 .benefit__item {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13997,6 +13999,11 @@ h1 {
 
 .about-product .done-img {
   width: 40px;
+}
+
+.buy-section2 .about-heading {
+  font-style: italic;
+  font-weight: bold;
 }
 
 .reviews {
@@ -14163,6 +14170,11 @@ form .more-btn {
   padding: 100px 0;
 }
 
+.form .about-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
 .form-control {
   height: auto;
   padding: 20px 30px;
@@ -14174,6 +14186,11 @@ form .more-btn {
   border-color: #88b44e;
   -webkit-box-shadow: 0px 0px 4px 0px #88b44e;
           box-shadow: 0px 0px 4px 0px #88b44e;
+}
+
+.form-group label {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 .last-text {
