@@ -3,7 +3,7 @@
     "use strict";
     //animation
     AOS.init({
-        offset: 150,
+        offset: 30,
         duration: 1000,
         delay: 100,
         easing: 'ease',

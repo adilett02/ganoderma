@@ -107,7 +107,7 @@
 .sticky-wrapper.is-sticky .burger:before,
 .sticky-wrapper.is-sticky .burger span,
 .sticky-wrapper.is-sticky .burger:after {
-  background: #000000;
+  background: $green;
   transition: 0s all ease;
 }
 
@@ -236,6 +236,14 @@
     &.order {
       color: $white;
     }
+  }
+}
+.site-nav-wrap .nav-item {
+  width: auto;
+  .header__order-btn {
+    background-color: $green;
+    color: $white;
+    border-radius: 0;
   }
 }
 

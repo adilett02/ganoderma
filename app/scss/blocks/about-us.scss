@@ -14,10 +14,13 @@
     color: $white;
   }
 }
+.juncao__end{
+  padding-bottom: 25px;
+}
 
 .problem__decision-section {
   background: linear-gradient(to right, $black 50%, $green 50%);
-  .div {
+  .mobile__dark, .mobile__green {
     padding: 50px 30px;
     font-family: $font2;
     svg {

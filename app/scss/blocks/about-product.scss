@@ -19,6 +19,7 @@
 .useful__list {
   position: relative;
   width: 100%;
+  overflow-x: hidden;
   &::before {
     content: "";
     position: absolute;
