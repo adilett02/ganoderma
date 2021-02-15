@@ -1,7 +1,7 @@
 (function ($) {
 
     "use strict";
-    //animation
+    // animation
     AOS.init({
         offset: 30,
         duration: 1000,
