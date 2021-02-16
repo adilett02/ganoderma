@@ -8,6 +8,7 @@
         delay: 100,
         easing: 'ease',
         once: true,
+        disable: 'mobile',
     });
 
     console.log($('header').height());
