@@ -1,157 +1,156 @@
 @media (max-width: 991px) {
-    .navbar-collapse{
+    .navbar-collapse {
         padding-bottom: 30px;
     }
-    .hidden-text{
+    .hidden-text {
         font-size: 100px;
     }
-    .slider__item{
+    .slider__item {
         margin: 0;
+    }
+    .more-btn2 {
+        margin: 40px auto auto auto;
+    }
+    .buy-section {
+        padding: 30px 0;
     }
 }
 
-
 @media (max-width: 767px) {
-    .title{
+    .title {
         font-size: 60px;
     }
-    .suptitle{
+    .suptitle {
         font-size: 50px;
     }
-    .mobile-img{
+    .mobile-img {
         display: block;
     }
-    .desktop-img{
+    .desktop-img {
         display: none;
     }
-    .slider__item{
+    .slider__item {
         padding: 30px 20px;
     }
-    .problem__decision-section{
+    .problem__decision-section {
         background: linear-gradient(to bottom, $black 50%, $green 50%);
     }
 }
 
 @media (max-width: 575px) {
-    body{
+    body {
         font-size: 14px;
     }
-    .title{
+    .title {
         font-size: 50px;
     }
-    .suptitle{
+    .suptitle {
         font-size: 40px;
     }
-    .sticky-wrapper .logo{
+    .sticky-wrapper .logo {
         width: 50px;
         margin: 10px 0;
     }
-    .burger:before{
+    .burger:before {
         top: 6px;
     }
     .burger:after {
         top: 24px;
     }
-    .is-sticky .progress-container{
+    .is-sticky .progress-container {
         height: 3px;
-        .progress-bar{
+        .progress-bar {
             height: 3px;
         }
     }
-    .header{
-        .nav-item{
+    .header {
+        .nav-item {
             font-size: 16px;
         }
-        .order{
+        .order {
             padding: 10px 15px;
-        } 
+        }
     }
-    .subtitle{
+    .subtitle {
         font-size: 16px;
     }
-    .hidden-text{
+    .hidden-text {
         font-size: 60px;
     }
-    .slider__item{
+    .slider__item {
         padding: 20px 10px;
     }
-    .reviews{
+    .reviews {
         padding-bottom: 100px;
     }
-    .heading-wrapper{
+    .heading-wrapper {
         padding: 40px 0;
     }
-    .video-section .video-heading{
+    .video-section .video-heading {
         font-size: 35px;
     }
-    h4.about-heading{
+    h4.about-heading {
         font-size: 28px;
     }
-    .buy-section{
+    .video-section {
         padding: 30px 0;
-    }
-    .more-btn2{
-        margin: 40px auto auto auto;
-    }
-    .video-section{
-        padding: 30px 0;
-        .tea-video{
+        .tea-video {
             height: 170px;
         }
     }
-    .buy-section2{
+    .buy-section2 {
         padding: 130px 0 30px;
     }
-    .mobile__dark{
+    .mobile__dark {
         background-color: $black;
     }
-    .mobile__green{
+    .mobile__green {
         background-color: $green;
     }
-    .advice__text{
+    .advice__text {
         padding: 30px 0;
     }
-    .form{
+    .form {
         padding: 50px 0;
     }
-    .form-control{
+    .form-control {
         padding: 15px 30px;
     }
-    .last-text{
+    .last-text {
         font-size: 16px;
     }
-    .social__list{
+    .social__list {
         justify-content: center;
     }
-    .about-us .hidden-text{
+    .about-us .hidden-text {
         font-size: 53px;
     }
-    .useful__list .useful__item{
+    .useful__list .useful__item {
         width: 100%;
         padding-left: 30px;
     }
-    .useful__list .useful__item.left{
+    .useful__list .useful__item.left {
         margin: 0;
         padding-right: 0;
     }
-    .useful__list .useful__item::before{
-        left: 10px;
+    .useful__list .useful__item::before {
+        left: 11px;
         border-color: transparent #88b44e transparent transparent;
     }
-    .useful__list::before{
+    .useful__list::before {
         left: 0;
     }
-    .about-product .done-img{
+    .about-product .done-img {
         width: 25px;
     }
-
-
-
-
-
-
-
-
-
-    
+    .problem__decision-section {
+        .mobile__dark,
+        .mobile__green {
+            svg {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 25px;
+            }
+        }
+    }
 }

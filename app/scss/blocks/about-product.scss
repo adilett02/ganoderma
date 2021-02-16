@@ -39,6 +39,8 @@
       padding: 30px;
       background-color: $green;
       color: $white;
+      border-radius: 10px;
+      font-family: $font2;
     }
     &::before {
       content: "";
@@ -46,7 +48,7 @@
       width: 0;
       height: 0;
       top: 10%;
-      right: 10px;
+      right: 11px;
       z-index: 1;
       border: 10px solid;
       border-color: transparent transparent transparent $green;
@@ -62,7 +64,7 @@
       top: 10%;
       z-index: 1;
       border: 10px solid;
-      left: 10px;
+      left: 11px;
       right: auto;
       border-color: transparent $green transparent transparent;
     }
