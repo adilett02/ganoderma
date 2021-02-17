@@ -193,21 +193,16 @@
     siteMenuClone();
 
 
-    // var siteSticky = function () {
-    //     $(".js-sticky-header").sticky({ topSpacing: 0 });
-    // };
-    // siteSticky();
+    var siteSticky = function () {
+        $(".js-sticky-header").sticky({ topSpacing: 0 });
+    };
+    siteSticky();
 
 
 
 
 
     //typed js
-    // var typed = new Typed('.subtitle', {
-    //     strings: ["First sentence.", "Международная компания SmartRich предлагает Вам оценить уникальный вкус кофе и чая!"],
-    //     typeSpeed: 40,
-    //     showCursor: false,
-    // });
     new TypeIt(".subtitle", {
         // strings: "Международная компания Smar&tRich предлагает Вам оценить уникальный вкус кофе и чая!",
         speed: 60,
