@@ -43,9 +43,9 @@ function scripts() {
     return src([
         'app/js/main.js'
     ])
-        .pipe(concat('main.min.js'))
-        .pipe(uglify())
-        .pipe(dest('dist/js'))
+        // .pipe(concat('main.min.js'))
+        // .pipe(uglify())
+        // .pipe(dest('app/js'))
         .pipe(browserSync.stream())
 }
 function jsLibs(cb) {
@@ -64,14 +64,13 @@ function jsLibs(cb) {
 
     return src(libs)
         .pipe(concat('libs.min.js'))
-        .pipe(uglify())
         .pipe(dest('app/js'))
 }
 
 
 function styles() {
     return src('app/scss/style.scss')
-        .pipe(scss({ outputStyle: 'compressed' }))
+        .pipe(scss({ outputStyle: 'expanded' }))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
             grid: true
