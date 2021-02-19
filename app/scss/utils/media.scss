@@ -17,6 +17,9 @@
 }
 
 @media (max-width: 767px) {
+    .reviews{
+        background-attachment: inherit;
+    }
     .title {
         font-size: 60px;
     }
