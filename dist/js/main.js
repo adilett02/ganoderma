@@ -11,8 +11,6 @@
         disable: 'mobile',
     });
 
-    console.log($('header').height());
-
 
     //100vh на телефонах
     let vh = window.innerHeight * 0.01;
@@ -43,10 +41,10 @@
         navHeight = nav.outerHeight(); // получаем высоту навигации 
 
     // поворот экрана 
-    window.addEventListener('orientationchange', function () {
-        navHeight = nav.outerHeight();
-    }, false);
-
+    // window.addEventListener('orientationchange', function () {
+    //     navHeight = nav.outerHeight();
+    // }, false);
+     
     $(window).on('scroll', function () {
         const position = $(this).scrollTop();
 
