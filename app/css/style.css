@@ -13153,6 +13153,11 @@ body {
   font-size: 18px;
 }
 
+.row {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -14011,12 +14016,23 @@ h1 {
   background-image: url(../images/video-leafs.png);
 }
 
-.video-section .tea-video {
+.video-section .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-section .videoWrapper .tea-video {
+  position: absolute;
+  top: 100px;
+  left: 0;
   width: 100%;
-  height: 520px;
-  margin-bottom: -100px;
+  height: 100%;
   -webkit-box-shadow: 4px 7px 10px 2px rgba(0, 0, 0, 0.7);
   box-shadow: 4px 7px 10px 2px rgba(0, 0, 0, 0.7);
+  border: none;
 }
 
 .video-section .video-heading {

@@ -43,9 +43,9 @@ function scripts() {
     return src([
         'app/js/main.js'
     ])
-        // .pipe(concat('main.min.js'))
-        // .pipe(uglify())
-        // .pipe(dest('app/js'))
+        .pipe(concat('main.min.js'))
+        .pipe(uglify())
+        .pipe(dest('dist/js'))
         .pipe(browserSync.stream())
 }
 function jsLibs(cb) {
@@ -57,23 +57,21 @@ function jsLibs(cb) {
         'node_modules/swiper/swiper-bundle.js',
         'node_modules/jquery-sticky/jquery.sticky.js',
         'node_modules/jquery-easing/dist/jquery.easing.1.3.umd.min.js',
-        // 'node_modules/typed.js/lib/typed.min.js'
         'node_modules/typeit/dist/typeit.min.js',
-        // 'node_modules/lazy-youtube/index.js',
-        // 'node_modules/youtube-lazyload/index.js',
     ];
 
     if (!libs.length) return cb();
 
     return src(libs)
         .pipe(concat('libs.min.js'))
+        .pipe(uglify())
         .pipe(dest('app/js'))
 }
 
 
 function styles() {
     return src('app/scss/style.scss')
-        .pipe(scss({ outputStyle: 'expanded' }))
+        .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
             grid: true

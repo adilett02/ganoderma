@@ -43,9 +43,9 @@
         navHeight = nav.outerHeight(); // получаем высоту навигации 
 
     // поворот экрана 
-    // window.addEventListener('orientationchange', function () {
-    //     navHeight = nav.outerHeight();
-    // }, false);
+    window.addEventListener('orientationchange', function () {
+        navHeight = nav.outerHeight();
+    }, false);
 
     $(window).on('scroll', function () {
         const position = $(this).scrollTop();
@@ -97,7 +97,7 @@
     }
 
 
-    //back-to-top
+    // back-to-top
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
@@ -203,11 +203,6 @@
 
 
     //typed js
-    // var typed = new Typed('.subtitle', {
-    //     strings: ["First sentence.", "Международная компания SmartRich предлагает Вам оценить уникальный вкус кофе и чая!"],
-    //     typeSpeed: 40,
-    //     showCursor: false,
-    // });
     new TypeIt(".subtitle", {
         // strings: "Международная компания Smar&tRich предлагает Вам оценить уникальный вкус кофе и чая!",
         speed: 60,
@@ -233,4 +228,5 @@
     $('.more__link').on('click', function() {
         $('.hidden-block').slideToggle();
     });
+
 })(jQuery);
