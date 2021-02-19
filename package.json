@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
-    "typed.js": "^2.0.11"
+    "typed.js": "^2.0.11",
+    "youtube-lazyload": "^1.1.1"
   }
 }

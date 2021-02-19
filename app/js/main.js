@@ -47,22 +47,22 @@
         navHeight = nav.outerHeight();
     }, false);
 
-    $(window).on('scroll', function () {
-        const position = $(this).scrollTop();
+    // $(window).on('scroll', function () {
+    //     const position = $(this).scrollTop();
 
-        section.each(function () {
-            const top = $(this).offset().top - navHeight - 200,
-                bottom = top + $(this).outerHeight();
+    //     section.each(function () {
+    //         const top = $(this).offset().top - navHeight - 200,
+    //             bottom = top + $(this).outerHeight();
 
-            if (position >= top && position <= bottom) {
-                nav.find('a').removeClass('active-link');
-                section.removeClass('active-section');
+    //         if (position >= top && position <= bottom) {
+    //             nav.find('a').removeClass('active-link');
+    //             section.removeClass('active-section');
 
-                $(this).addClass('active-section');
-                nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active-link');
-            }
-        });
-    });
+    //             $(this).addClass('active-section');
+    //             nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active-link');
+    //         }
+    //     });
+    // });
 
 
     //Слайдер для отзывов
@@ -87,28 +87,28 @@
     })
 
     // Индикатор прокрутки
-    window.onscroll = function () { myFunction() };
+    // window.onscroll = function () { myFunction() };
 
-    function myFunction() {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
-    }
+    // function myFunction() {
+    //     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    //     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    //     var scrolled = (winScroll / height) * 100;
+    //     document.getElementById("myBar").style.width = scrolled + "%";
+    // }
 
 
     //back-to-top
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').on('click', function () {
-        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
-        return false;
-    })
+    // $(window).scroll(function () {
+    //     if ($(this).scrollTop() > 100) {
+    //         $('.back-to-top').fadeIn('slow');
+    //     } else {
+    //         $('.back-to-top').fadeOut('slow');
+    //     }
+    // });
+    // $('.back-to-top').on('click', function () {
+    //     $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
+    //     return false;
+    // })
 
 
     //mobile-menu
@@ -193,10 +193,10 @@
     siteMenuClone();
 
 
-    var siteSticky = function () {
-        $(".js-sticky-header").sticky({ topSpacing: 0 });
-    };
-    siteSticky();
+    // var siteSticky = function () {
+    //     $(".js-sticky-header").sticky({ topSpacing: 0 });
+    // };
+    // siteSticky();
 
 
 
@@ -228,4 +228,5 @@
     $('.more__link').on('click', function() {
         $('.hidden-block').slideToggle();
     });
+
 })(jQuery);
