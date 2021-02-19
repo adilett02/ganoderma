@@ -64,13 +64,14 @@ function jsLibs(cb) {
 
     return src(libs)
         .pipe(concat('libs.min.js'))
+        .pipe(uglify())
         .pipe(dest('app/js'))
 }
 
 
 function styles() {
     return src('app/scss/style.scss')
-        .pipe(scss({ outputStyle: 'expanded' }))
+        .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
             grid: true
