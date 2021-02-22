@@ -105,6 +105,15 @@
 }
 .site-mobile-menu li a.nav-link{
   display: inline-block;
+  &::after{
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: $navbar-light-color;
+    height: 1px;
+    transform: scale(0);
+    transition: all 0.3s;
+  }
 }
 .site-mobile-menu li a.active-link::after {
   content: "";
