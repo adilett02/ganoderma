@@ -11,7 +11,7 @@
 }
 .buy-section {
   background-image: url(../images/buy-bg.png);
-  background-color: $green;
+  background-color: $primaryColor;
   background-position: center;
   padding-top: 120px;
 }
@@ -28,7 +28,7 @@
     left: 50%;
     width: 2px;
     margin-left: -1px;
-    background-color: $black;
+    background-color: $secondaryColor;
   }
   .useful__item {
     position: relative;
@@ -37,7 +37,7 @@
     margin: 20px 0;
     &-text {
       padding: 30px;
-      background-color: $green;
+      background-color: $primaryColor;
       color: $white;
       border-radius: 10px;
       font-family: $font2;
@@ -51,7 +51,7 @@
       right: 11px;
       z-index: 1;
       border: 10px solid;
-      border-color: transparent transparent transparent $green;
+      border-color: transparent transparent transparent $primaryColor;
     }
     &.right {
       position: relative;
@@ -66,7 +66,7 @@
       border: 10px solid;
       left: 11px;
       right: auto;
-      border-color: transparent $green transparent transparent;
+      border-color: transparent $primaryColor transparent transparent;
     }
   }
   .useful__item.left {
@@ -89,13 +89,13 @@
   font-family: $font2;
   &:hover {
     background-color: $white;
-    color: $black;
+    color: $secondaryColor;
     font-weight: bold;
     transition: all 0.3s ease;
     .arrow {
-      background: $green;
+      background: $primaryColor;
       svg {
-        fill: $black;
+        fill: $secondaryColor;
       }
     }
   }
@@ -140,7 +140,7 @@
     text-align: center;
     margin-bottom: 40px;
     span {
-      color: $green;
+      color: $primaryColor;
     }
   }
 }
@@ -152,16 +152,16 @@
     margin: 30px auto;
   }
   .buy-btn {
-    background-color: $green;
+    background-color: $primaryColor;
     &:hover {
-      background-color: $black;
+      background-color: $secondaryColor;
       color: $white;
     }
   }
   .questions-btn {
     display: inline-flex;
     &:hover {
-      background-color: $green;
+      background-color: $primaryColor;
       color: $white;
       font-weight: normal;
       .arrow {
@@ -172,13 +172,13 @@
 }
 
 .more__link {
-  color: $green;
+  color: $primaryColor;
   text-decoration: underline;
   float: right;
   margin-top: 20px;
   background-color: transparent;
   &:hover {
-    color: $green;
+    color: $primaryColor;
   }
 }
 .hidden-block {

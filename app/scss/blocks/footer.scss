@@ -1,7 +1,7 @@
 //footer
 .footer{
     padding: 40px 0;
-    background-color: $black;
+    background-color: $secondaryColor;
     color: $white;
     font-family: $font2;
   }
@@ -14,7 +14,7 @@
       display: flex;
       width: 50px;
       height: 50px;
-      background-color: $green;
+      background-color: $primaryColor;
       padding: 15px;
       border-radius: 50%;
       transition: all 0.3s ease 0s;
@@ -22,7 +22,7 @@
           background-color: $white;
           transition: all 0.3s ease 0s;
           svg{
-            fill: $black;
+            fill: $secondaryColor;
           }
         }
       }
@@ -42,7 +42,7 @@
     right: 15px;
     bottom: 15px;
     padding: 10px;
-    background: $green;
+    background: $primaryColor;
     border-radius: 50%;
     display: none;
     box-shadow: 0px 0px 6px 0px #000000;

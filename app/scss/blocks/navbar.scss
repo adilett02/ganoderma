@@ -9,7 +9,7 @@
 }
 .is-sticky .progress-bar {
   height: 3px;
-  background: $green;
+  background: $primaryColor;
   width: 0%;
 }
 
@@ -39,20 +39,20 @@
   border: 2px solid $white;
   border-radius: 50px;
   &:hover {
-    background-color: $green;
+    background-color: $primaryColor;
     color: $white !important;
-    border: 2px solid $green;
+    border: 2px solid $primaryColor;
   }
 }
 
 .sticky-wrapper.is-sticky .header__order-btn {
-  border: 2px solid $green;
+  border: 2px solid $primaryColor;
   border-radius: 50px;
-  color: $green !important;
+  color: $primaryColor !important;
   &:hover {
-    background-color: $green;
+    background-color: $primaryColor;
     color: $white !important;
-    border: 2px solid $green;
+    border: 2px solid $primaryColor;
     -webkit-box-shadow: 0px 0px 14px 0px rgba(136, 180, 78, 0.67);
     box-shadow: 0px 0px 14px 0px rgba(136, 180, 78, 0.67);
   }
@@ -91,13 +91,13 @@
     content: "";
     display: block;
     width: 100%;
-    background-color: $green;
+    background-color: $primaryColor;
     height: 1px;
     transform: scale(1);
     transition: all 0.3s;
   }
   li:hover a::after {
-    background: $green;
+    background: $primaryColor;
   }
   li:last-child a::after {
     display: none;
@@ -107,12 +107,12 @@
 .sticky-wrapper.is-sticky .burger:before,
 .sticky-wrapper.is-sticky .burger span,
 .sticky-wrapper.is-sticky .burger:after {
-  background: $green;
+  background: $primaryColor;
   transition: 0s all ease;
 }
 
 .sticky-wrapper.is-sticky .site-menu .nav-link {
-  color: $green;
+  color: $primaryColor;
 }
 
 .sticky-wrapper.is-sticky .site-navbar {
@@ -153,7 +153,7 @@
         display: inline-block;
         text-decoration: none !important;
         &:hover {
-          color: $green;
+          color: $primaryColor;
         }
       }
     }
@@ -231,7 +231,7 @@
   float: left;
   width: 100%;
   a {
-    color: $green;
+    color: $primaryColor;
     padding-left: 20px;
     font-size: 20px;
     &.order {
@@ -242,7 +242,7 @@
 .site-nav-wrap .nav-item {
   width: auto;
   .header__order-btn {
-    background-color: $green;
+    background-color: $primaryColor;
     color: $white;
     border-radius: 0;
   }
@@ -338,6 +338,6 @@
 .js-menu-toggle {
   svg {
     width: 20px;
-    fill: $black;
+    fill: $secondaryColor;
   }
 }

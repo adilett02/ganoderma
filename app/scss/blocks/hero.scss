@@ -74,7 +74,7 @@
     font-size: 72px;
     font-style: italic;
     font-weight: bolder;
-    color: $green;
+    color: $primaryColor;
     margin-bottom: 25px;
     text-align: center;
   }
@@ -106,7 +106,7 @@
       font-weight: bold;
       position: relative;
       transform: rotate(270deg) translateX(-50%) translateY(-50%);
-      color: $green;
+      color: $primaryColor;
       font-size: 14px;
       display: block;
       white-space: nowrap;
@@ -120,7 +120,7 @@
         top: 50%;
         width: 30px;
         height: 1px;
-        background-color: $green;
+        background-color: $primaryColor;
       }
     }
     .social-icons__item{
@@ -128,7 +128,7 @@
       margin-bottom: 10px;
       &:hover{
         svg{
-          fill: $green;
+          fill: $primaryColor;
         }
       }
       svg{

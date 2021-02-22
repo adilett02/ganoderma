@@ -13,8 +13,8 @@
   border-radius: 50px;
   font-family: $font2;
   &:focus {
-    border-color: $green;
-    box-shadow: 0px 0px 4px 0px $green;
+    border-color: $primaryColor;
+    box-shadow: 0px 0px 4px 0px $primaryColor;
   }
 }
 .form-group label{
