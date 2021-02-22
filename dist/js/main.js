@@ -63,6 +63,44 @@
     });
 
 
+
+
+
+
+
+
+
+
+
+
+    //добавление border для телефонов
+    // const section = $('section'),
+    const mobilenav = $('.site-mobile-menu')
+        // navHeight = nav.outerHeight(); // получаем высоту навигации 
+
+    // поворот экрана 
+    // window.addEventListener('orientationchange', function () {
+    //     navHeight = nav.outerHeight();
+    // }, false);
+     
+    $(window).on('scroll', function () {
+        const position = $(this).scrollTop();
+
+        section.each(function () {
+            const top = $(this).offset().top - navHeight,
+                bottom = top + $(this).outerHeight();
+
+            if (position >= top && position <= bottom) {
+                mobilenav.find('a').removeClass('active-link');
+                section.removeClass('active-section');
+
+                $(this).addClass('active-section');
+                mobilenav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active-link');
+            }
+        });
+    });
+
+
     //Слайдер для отзывов
     var mySwiper = new Swiper('.swiper-container', {
         loop: true,

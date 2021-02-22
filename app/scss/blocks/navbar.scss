@@ -103,6 +103,18 @@
     display: none;
   }
 }
+.site-mobile-menu li a.nav-link{
+  display: inline-block;
+}
+.site-mobile-menu li a.active-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: $primaryColor;
+  height: 1px;
+  transform: scale(1);
+  transition: all 0.3s;
+}
 
 .sticky-wrapper.is-sticky .burger:before,
 .sticky-wrapper.is-sticky .burger span,
