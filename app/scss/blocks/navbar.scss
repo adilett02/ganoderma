@@ -103,27 +103,7 @@
     display: none;
   }
 }
-.site-mobile-menu li a.nav-link{
-  display: inline-block;
-  &::after{
-    content: "";
-    display: block;
-    width: 100%;
-    background-color: $navbar-light-color;
-    height: 1px;
-    transform: scale(0);
-    transition: all 0.3s;
-  }
-}
-.site-mobile-menu li a.active-link::after {
-  content: "";
-  display: block;
-  width: 100%;
-  background-color: $primaryColor;
-  height: 1px;
-  transform: scale(1);
-  transition: all 0.3s;
-}
+
 
 .sticky-wrapper.is-sticky .burger:before,
 .sticky-wrapper.is-sticky .burger span,
@@ -200,6 +180,28 @@
 .offcanvas-menu .site-mobile-menu {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
+}
+
+.site-mobile-menu li a.nav-link{
+  display: inline-block;
+  &::after{
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: $navbar-light-color;
+    height: 1px;
+    transform: scale(0);
+    transition: all 0.3s;
+  }
+}
+.site-mobile-menu li a.active-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: $primaryColor;
+  height: 1px;
+  transform: scale(1);
+  transition: all 0.3s;
 }
 
 .site-mobile-menu-header {
