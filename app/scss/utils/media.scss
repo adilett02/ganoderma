@@ -17,7 +17,7 @@
 }
 
 @media (max-width: 767px) {
-    .reviews{
+    .reviews {
         background-attachment: inherit;
     }
     .title {
@@ -51,7 +51,7 @@
         font-size: 40px;
     }
     .sticky-wrapper .logo {
-        width: 50px;
+        width: 60px;
         margin: 10px 0;
     }
     .burger:before {
@@ -156,10 +156,10 @@
             }
         }
     }
-    .video-section .videoWrapper{
+    .video-section .videoWrapper {
         margin-bottom: -100px;
     }
-    .video-section .videoWrapper .tea-video{
+    .video-section .videoWrapper .tea-video {
         top: 0;
     }
 }

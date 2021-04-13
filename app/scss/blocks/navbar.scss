@@ -17,8 +17,9 @@
   display: block;
   width: 70px;
   margin: 10px 0;
-  img {
+  svg {
     width: 100%;
+    fill: #fff;
   }
 }
 .logo2-img {
@@ -28,11 +29,8 @@
   display: none;
 }
 
-.sticky-wrapper.is-sticky .logo-img {
-  display: block;
-}
-.sticky-wrapper.is-sticky .logo2-img {
-  display: none;
+.sticky-wrapper.is-sticky .logo svg {
+  fill: $primaryColor;
 }
 
 .header__order-btn {
@@ -103,7 +101,6 @@
     display: none;
   }
 }
-
 
 .sticky-wrapper.is-sticky .burger:before,
 .sticky-wrapper.is-sticky .burger span,
@@ -182,9 +179,9 @@
   transform: translateX(0%);
 }
 
-.site-mobile-menu li a.nav-link{
+.site-mobile-menu li a.nav-link {
   display: inline-block;
-  &::after{
+  &::after {
     content: "";
     display: block;
     width: 100%;
