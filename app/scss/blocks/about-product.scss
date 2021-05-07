@@ -28,6 +28,14 @@
   background-color: $primaryColor;
   background-position: center;
   padding-top: 120px;
+  .order-btn {
+    margin: 40px auto auto 20px;
+    background-color: $secondaryColor;
+    &:hover {
+      background-color: $white;
+      color: $secondaryColor;
+    }
+  }
 }
 
 .useful__list {
@@ -98,22 +106,6 @@
   font-style: italic;
   color: $white;
 }
-.more-btn2 {
-  margin: 40px auto auto 20px;
-  font-family: $font2;
-  &:hover {
-    background-color: $white;
-    color: $secondaryColor;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    .arrow {
-      background: $primaryColor;
-      svg {
-        fill: $secondaryColor;
-      }
-    }
-  }
-}
 
 .video-section {
   position: relative;
@@ -161,17 +153,16 @@
 .buy-section2 {
   background-color: $white;
   padding: 170px 0 120px;
-  .more-btn2 {
+  .order-btn {
     margin: 30px auto;
-  }
-  .buy-btn {
-    background-color: $primaryColor;
     &:hover {
       background-color: $secondaryColor;
       color: $white;
     }
   }
+
   .questions-btn {
+    background-color: $secondaryColor;
     display: inline-flex;
     &:hover {
       background-color: $primaryColor;
